@@ -15,34 +15,64 @@ body{
 }
 .textTospeach{
     display: flex;
+    
+     justify-content: center;
     flex-direction: column;
 }
 
 #inputField{
-    width: 450px;
+    width: 600px;
     height: 300px;
     outline: none;
     border-radius: 10px;
     border: 1px solid white;
     padding:15px; 
     background-color: transparent;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.096);
     color: white;
-    font-size: 15px;
+    font-size: 16px;
 }
 #inputField::placeholder{
-    color: white;
+
     font-size: 15px;
 }
 #select{
-    width: 300px;
+    width: 350px;
     height: 35px;
     border-radius: 20px;
     outline: none;
-    border: none;
-
+    border: 1px solid white;
+    padding: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.096);
 }
+
 #btn{
-    width: 100px;
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: palevioletred;
+    color: white;
+}
+@media (max-width:550px) {
+    #inputField{
+        width: 95%;
+    }
+    #select,#btn{
+        width: 380px;
+    }
+ 
+.textTospeach{
+    align-items: center;
+}
+.selectAndButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 }
