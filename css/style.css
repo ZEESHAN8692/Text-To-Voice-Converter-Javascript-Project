@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../Static/1.jpg');
+    background-size:auto;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textTospeach{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputField{
+    width: 450px;
+    height: 300px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding:15px; 
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.096);
+    color: white;
+    font-size: 15px;
+}
+#inputField::placeholder{
+    color: white;
+    font-size: 15px;
+}
+#select{
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+}
+#btn{
+    width: 100px;
+}
