@@ -1,78 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: url('../Static/1.jpg');
-    background-size:auto;
+body {
+  background-image: url("../Static/1.jpg");
+  background-size: auto;
 }
-.main{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textTospeach {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+#inputField {
+  width: 600px;
+  height: 300px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 15px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.096);
+  color: white;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.411);
+}
+#inputField::placeholder {
+  font-size: 15px;
+}
+#select {
+  width: 350px;
+  height: 35px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid white;
+  padding-left: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.096);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.411);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../Static/dropdown.png") no-repeat right 10px center;
+  padding-right: 40px;
+  background-size: 16px 16px;
+  color: white;
+}
+#select option {
+  background-color: palevioletred;
+  color: white;
+}
+
+#btn {
+  width: 250px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: palevioletred;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.411);
+}
+@media (max-width: 550px) {
+  #inputField {
+    width: 95%;
+  }
+  #select,
+  #btn {
+    width: 380px;
+  }
+
+  .textTospeach {
     align-items: center;
-}
-.textTospeach{
-    display: flex;
-    
-     justify-content: center;
-    flex-direction: column;
-}
-
-#inputField{
-    width: 600px;
-    height: 300px;
-    outline: none;
-    border-radius: 10px;
-    border: 1px solid white;
-    padding:15px; 
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.096);
-    color: white;
-    font-size: 16px;
-}
-#inputField::placeholder{
-
-    font-size: 15px;
-}
-#select{
-    width: 350px;
-    height: 35px;
-    border-radius: 20px;
-    outline: none;
-    border: 1px solid white;
-    padding: 5px;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.096);
-}
-
-#btn{
-    width: 250px;
-    height: 35px;
-    border-radius: 20px;
-    border: 1px solid white;
-    cursor: pointer;
-    background-color: palevioletred;
-    color: white;
-}
-@media (max-width:550px) {
-    #inputField{
-        width: 95%;
-    }
-    #select,#btn{
-        width: 380px;
-    }
- 
-.textTospeach{
-    align-items: center;
-}
-.selectAndButton{
+  }
+  .selectAndButton {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
+  }
 }
